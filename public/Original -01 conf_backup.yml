@@ -1,0 +1,101 @@
+appConfig:
+  theme: callisto
+  layout: horizontal
+  iconSize: small
+  language: pt
+pageInfo:
+  title: Home Lab
+  description: Welcome to your Home Lab!
+  navLinks:
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
+  footerText: ''
+sections:
+  - name: Starter Only
+    icon: fas fa-server
+    items:
+      - title: Google
+        description: Search
+        icon: /icons/dashboard-icons/png/google.png
+        url: https://google.com
+        target: newtab
+        id: 0_1191_google
+  - name: Local stuffs
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: portainer
+        description: portainer
+        icon: >-
+          https://www.portainer.io/hs-fs/hubfs/PortainerTM-blue-landscape-small-web-300px.png?width=600&name=PortainerTM-blue-landscape-small-web-300px.png
+        url: http://localhost:9000
+        target: newtab
+        statusCheck: true
+        statusCheckInterval: 20
+        id: 0_1190_portainer
+      - title: Heindall
+        description: Heindall
+        url: http://localhost:11080/
+        target: newtab
+        id: 1_1190_heindall
+      - title: Duplicati
+        description: Backup-Local
+        url: http://localhost:8270
+        target: newtab
+        statusCheck: true
+        id: 2_1190_duplicati
+      - title: UP time Kuma
+        description: Services and websites status
+        icon: >-
+          /Users/robertandersoncarvalho/Documents/docker/dashy/icons/dashboard-icons/png/uptime-kuma.png
+        url: http://0.0.0.0:3001/dashboard
+        target: newtab
+        statusCheck: true
+        id: 3_1190_uptimekuma
+  - name: raspberry-pi
+    widgets: 
+      - type: gl-current-cpu
+        options:
+          hostname: http://192.168.0.151:61208
+        id: 0_1248_glcurrentcpu
+      - type: gl-current-cores
+        options:
+          hostname: http://192.168.0.151:61208
+        id: 1_1248_glcurrentcores
+      - type: gl-cpu-history
+        options:
+          hostname: http://192.168.0.151:61208
+        id: 2_1248_glcpuhistory
+      - type: gl-disk-space
+        options:
+          hostname: http://192.168.0.151:61208
+          limit: 60
+        id: 3_1248_gldiskspace
+  - name: Speedy- test
+    widgets:
+      - type: embed
+        options:
+          scriptSrc: https://cdn.speedcheck.org/basic/scbjs.min.js
+          html: >
+            <div id="sc-container">
+
+            <div id="sc-branding" class="sc-bb">
+
+            <a target="_blank" href="https://www.speedcheck.org/">
+
+            <img
+            src="https://cdn.speedcheck.org/branding/speedcheck-logo-18.png"
+            alt="Speedcheck"/>
+
+            </a>
+
+            </div>
+
+            </div>
+        id: 0_1143_embed
