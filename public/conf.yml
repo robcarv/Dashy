@@ -1,8 +1,8 @@
 # 
-# Simople ym file for dashy 
+# Simople yml file for dashy 
 # 
 
-appConfig:
+appConfig: 
   statusCheck: false
   theme: nord
   fontAwesomeKey: c94dc2b452
