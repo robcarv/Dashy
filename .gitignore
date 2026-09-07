@@ -1,0 +1,5 @@
+public/conf*.yml
+.DS_Store
+*.sqlite
+Duplicati-server.sqlite
+dashy/public/conf.yml

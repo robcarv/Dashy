@@ -5,8 +5,8 @@ Personal dashboard configuration for Dashy.
 This repository contains the configuration file used in my homelab Dashy instance.
 
 **Live dashboard:**
-- Pi501: http://192.168.68.117:8200
-- Pi4: http://192.168.68.102:8200
+- Pi501: http://<ip-interno>:8200 (dashboard local)
+- Pi4: http://<ip-interno>:8200 (dashboard local)
 
 **Full configuration project:** [dashy-homelab](https://github.com/robcarv/dashy-homelab)
 
